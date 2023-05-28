@@ -9,7 +9,7 @@ function domID(id)
     var element = document.getElementById(id);
     return element;
     
-    // hàm này có tác dụng rút gắn việc viết cú pháp document.getElementById
+    
 }
 
 function themNv() 
@@ -26,12 +26,7 @@ function themNv()
     var numHour = domID("gioLam").value;
 
     var loi = 0;
-// Sau khi lấy xong thì mình kiểm tra validation
-        // đặt biến lỗi tại đây để nếu giá trị là true thì nó sẽ đi tiếp
-        // nếu để return ở đây thì nếu gặp lỗi nó sẽ dừng lại tại chỗ
-        // nhưng vì ta muốn ktra hết các biến nên ko nên dùng return
-    
-    // soTk
+
     if(validate.KiemTraDoDai(soTk))
     {
         domID("tknv").style.borderColor = "green";
@@ -101,15 +96,14 @@ function themNv()
         return;
     }
 
-// sau khi các dữ liệu được nhập vào đã hợp lệ 
-// việc tiếp theo ta làm sẽ là thêm nhân viên 
+
     var nhanVien = new NhanVien(soTk,hoVaTen,email,mkNv,numDay,salary,jobTitle,numHour);
     
     danhSachNhanVien.ThemNv(nhanVien);
     console.log(danhSachNhanVien);
 }
 
-// tác dụng của hàm này để đỡ phải viết lại cho tất cả các biến
+
 function kiemtraDauVaoRong(id, value)  
 {
     if(validate.KiemTraRong(value) == true)

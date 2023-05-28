@@ -1,12 +1,10 @@
 function kiemtraDauVao() {
-// Trong này sẽ bao gồm các phương thức cần đc ktra
+
 
 // 1. Kiểm tra rỗng
     this.KiemTraRong = function (value) 
     {
-        // lưu ý: khi nhập cú pháp trim() hãy nhớ thêm ngoặc kép vào trong ngoặc đơn
-        // nếu ko devtool sẽ báo lỗi "trim() is not a function" vì lệnh trim() chỉ có thể sd cho giá trị có dạng string
-        // việc thêm ngoặc kép sẽ đưa giá trị về dạng string
+        
         if(value.trim("") === "")
         {
             return true;

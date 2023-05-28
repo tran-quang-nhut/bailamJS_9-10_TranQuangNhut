@@ -7,8 +7,7 @@ function NhanVien (
     _luongCoBan,
     _chucVu,
     _gioLamTrongThang
-    // _tongLuong,
-    // _loaiNhanVien,
+    
     ) {
     this.soTk = _taiKhoan;
     this.hoVaTen = _hoTen;
@@ -18,6 +17,5 @@ function NhanVien (
     this.salary = _luongCoBan;
     this.jobTitle = _chucVu;
     this.numHour = _gioLamTrongThang;
-    // this.tongLuong = _tongLuong;
-    // this.loaiNhanVien = _loaiNhanVien;
+    
 }
